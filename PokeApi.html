@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <title>Pokedex_launchX</title>
+    
+</head>
+<body>
+    <div class="titulo_p">
+        <h1>Poke_Launch X </h1>
+    </div>
+    <div>
+        <button onclick="fetchPokemon()" class="Boton" > Buscar pokemon </button>
+    </div>
+
+    <div class="escritura">
+        <input type="text" placeholder="Escribe nombre o ID del pokemon" name="Pokename" id="Pokename">
+        <br>
+    </div>
+
+    
+    <div class="Name_oficial">
+        <h3 name="Nombre_oficial" id="Nombre_oficial" ></h3>
+    </div>
+
+    <div class="img" >
+        
+        <img src="https://cdn-icons-png.flaticon.com/512/287/287221.png" alt="Imagen de pokebola" name="Pokeimg" id="Pokeimg" class="img_poke"> 
+        
+    </div>
+    
+    <div class="tipo">
+        <br>
+        <h3> Tipo de pokemon: </h3>
+        <h4  class="tipode" name="Poke_tipo0" id="Poke_tipo0"></h4> 
+        <h4  class="tipode" name="Poke_tipo1" id="Poke_tipo1"></h4>
+    </div>
+    
+    
+    <div class="Pokedex_fondo">
+        <img src="https://art.pixilart.com/dd133c0b7dbc7d4.png" alt="pokedex">
+    </div>
+    
+    <div class="estadisticas">
+        <h3>Estadisticas</h3>
+        <div class="Esta">
+            
+            <h4 class="estadistic">Vida:</h4>
+            <h4 name="Poke_HP" id="estadistica0" class="P1"></h4>
+            <h4 class="estadistic">Ataque:</h4>
+            <h4 name="Poke_Ataque" id="estadistica1" class="P1"></h4>
+            <h4 class="estadistic">Defensa:</h4>
+            <h4 name="Poke_Defensa" id="estadistica2" class="P1"></h4>
+            <h4 class="estadistic">Ataque especial:</h4>
+            <h4 name="Poke_Ataque_especial" id="estadistica3" class="P1"></h4>
+            <h4 class="estadistic">Defensa especial:</h4>
+            <h4 name="Poke_Defensa_especial" id="estadistica4" class="P1"></h4>
+            <h4 class="estadistic">Velocidad:</h4>
+            <h4 name="Poke_Velocidad" id="estadistica5" class="P1"></h4>
+            
+        </div>
+    </div>
+
+    <div class="movimientos">
+        <h3>Movimientos</h3>
+            <div class="forma">
+
+                <h4 class="movimiento1">Movimiento 1:</h4>
+                <span class="movimiento2" name="movimiento1" id="movimiento0"></span>
+                <h4 class="movimiento1">Movimiento 2:</h4>
+                <span class="movimiento2" name="movimiento2" id="movimiento1"></span>
+                <h4 class="movimiento1">Movimiento 3:</h4>
+                <span class="movimiento2" name="movimiento3" id="movimiento2"></span>
+                <h4 class="movimiento1">Movimiento 4:</h4>
+                <span class="movimiento2" name="movimiento4" id="movimiento3"></span>
+            </div>
+    </div>
+    
+        <button class="Shiny" id="Shiny" onclick="Sacarlo()">Shiny</button>
+
+</body>
+
+<footer> <script src="./Poke_Api.js"></script> </footer>
+</html>
